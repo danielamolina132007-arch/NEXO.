@@ -1,0 +1,312 @@
+/* NEXO — estilo de la pantalla de entrada */
+
+:root {
+  --tinta: #1b2430;
+  --papel: #f6f7f5;
+  --linea: #d6dad3;
+  --acento: #1f5f4b;
+  --alerta-fondo: #fff3d6;
+  --alerta-borde: #b8860b;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0 1.25rem 3rem;
+  background: var(--papel);
+  color: var(--tinta);
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.cabecera {
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 3rem 0 1rem;
+  border-bottom: 3px solid var(--acento);
+}
+
+.etiqueta {
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.8rem;
+  color: #5b6660;
+}
+
+.nombre {
+  margin: 0.2rem 0 1rem;
+  font-size: clamp(2.6rem, 8vw, 4rem);
+  letter-spacing: 0.06em;
+}
+
+.contenido {
+  max-width: 780px;
+  margin: 0 auto;
+}
+
+h2 {
+  font-size: 1.15rem;
+  margin: 2rem 0 0.5rem;
+}
+
+.tesis {
+  border-left: 5px solid var(--acento);
+  padding-left: 1rem;
+  margin-top: 2rem;
+}
+
+.tesis p {
+  margin: 0;
+}
+
+.aviso {
+  margin-top: 2.5rem;
+  padding: 1.25rem 1.5rem;
+  background: var(--alerta-fondo);
+  border: 3px solid var(--alerta-borde);
+  border-radius: 6px;
+}
+
+.aviso h2 {
+  margin-top: 0;
+  color: #8a5a00;
+}
+
+.aviso-texto {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0.25rem 0 0.75rem;
+}
+
+.aviso p:last-child {
+  margin-bottom: 0;
+}
+
+.pie {
+  max-width: 780px;
+  margin: 3rem auto 0;
+  padding-top: 1rem;
+  border-top: 1px solid var(--linea);
+  font-size: 0.95rem;
+  color: #5b6660;
+}
+
+/* --- Pantalla «El caso» --- */
+
+.bajada {
+  margin: 0 0 1rem;
+  font-size: 1.05rem;
+  color: #46514b;
+}
+
+.recordatorio {
+  max-width: 780px;
+  margin: 1rem auto 0;
+  padding: 0.6rem 1rem;
+  background: var(--alerta-fondo);
+  border-left: 5px solid var(--alerta-borde);
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.aviso-datos {
+  background: #fff;
+  border: 1px solid var(--linea);
+  border-left: 5px solid var(--acento);
+  padding: 0.9rem 1.1rem;
+  margin-top: 1.5rem;
+}
+
+.campo {
+  margin-top: 2rem;
+}
+
+.campo label {
+  display: block;
+  font-weight: 700;
+  font-size: 1.05rem;
+}
+
+.ayuda {
+  margin: 0.25rem 0 0.5rem;
+  font-size: 0.95rem;
+  color: #5b6660;
+}
+
+select {
+  width: 100%;
+  max-width: 520px;
+  padding: 0.6rem;
+  font-size: 1rem;
+  font-family: inherit;
+  color: var(--tinta);
+  background: #fff;
+  border: 2px solid var(--linea);
+  border-radius: 6px;
+}
+
+select:focus {
+  outline: 3px solid var(--acento);
+  outline-offset: 2px;
+}
+
+.ejemplo {
+  margin-top: 3rem;
+  padding: 1.25rem 1.5rem;
+  background: #fff;
+  border: 1px solid var(--linea);
+  border-radius: 6px;
+}
+
+.ejemplo h2 {
+  margin-top: 0;
+}
+
+.ejemplo-titulo {
+  font-weight: 700;
+  margin: 0.5rem 0;
+}
+
+.relato {
+  margin: 0 0 0.75rem;
+  padding-left: 1rem;
+  border-left: 4px solid var(--linea);
+  font-style: italic;
+  color: #3a453f;
+}
+
+.boton {
+  display: inline-block;
+  padding: 0.65rem 1.2rem;
+  font-size: 1rem;
+  font-family: inherit;
+  font-weight: 700;
+  color: #fff;
+  background: var(--acento);
+  border: none;
+  border-radius: 6px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.boton:hover {
+  background: #174637;
+}
+
+.confirmacion {
+  min-height: 1.4rem;
+  margin: 0.75rem 0 0;
+  font-weight: 600;
+  color: var(--acento);
+}
+
+.nota-siguiente {
+  margin-top: 2rem;
+  font-size: 0.95rem;
+  color: #5b6660;
+}
+
+.volver {
+  margin-top: 2.5rem;
+  font-size: 0.95rem;
+}
+
+.siguiente {
+  margin-top: 2.5rem;
+}
+
+/* --- Pantalla «La revisión» y «La memoria» --- */
+
+.resumen {
+  margin-top: 1.5rem;
+  padding: 0.75rem 1rem;
+  background: #eef3f0;
+  border-left: 5px solid var(--acento);
+  font-weight: 600;
+}
+
+.sin-regla {
+  background: var(--alerta-fondo);
+  border-left: 5px solid var(--alerta-borde);
+  padding: 0.75rem 1rem;
+}
+
+.regla {
+  margin: 0.75rem 0;
+  padding: 1rem 1.25rem;
+  background: #fff;
+  border: 1px solid var(--linea);
+  border-radius: 6px;
+}
+
+.regla h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1.05rem;
+  color: var(--acento);
+}
+
+.regla p {
+  margin: 0;
+}
+
+.entidad {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin: 0.25rem 0;
+}
+
+.entidad.definida {
+  color: var(--acento);
+}
+
+.entidad.pendiente {
+  color: #8a5a00;
+}
+
+.nota {
+  font-size: 0.95rem;
+  color: #5b6660;
+}
+
+.limites {
+  margin-top: 3rem;
+  padding: 1.25rem 1.5rem;
+  background: #fff;
+  border: 3px solid var(--tinta);
+  border-radius: 6px;
+}
+
+.limites h2 {
+  margin-top: 0;
+}
+
+.limites-intro {
+  margin-top: 0;
+  font-size: 0.95rem;
+  color: #5b6660;
+}
+
+.limites li {
+  margin-bottom: 0.5rem;
+}
+
+.regla-titulo {
+  font-weight: 700;
+  margin-bottom: 0.2rem;
+}
+
+.boton.secundario {
+  color: var(--acento);
+  background: #fff;
+  border: 2px solid var(--acento);
+}
+
+.boton.secundario:hover {
+  color: #fff;
+  background: var(--acento);
+}

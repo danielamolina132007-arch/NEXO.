@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NEXO — El caso</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <header class="cabecera">
+    <p class="etiqueta">NEXO · Paso 2</p>
+    <h1 class="nombre">El caso</h1>
+    <p class="bajada">Cuenta la situación solo con los datos que importan.</p>
+  </header>
+
+  <p class="recordatorio">
+    Esto no es asesoría jurídica. NEXO no sustituye a un abogado ni emite un dictamen.
+  </p>
+
+  <main class="contenido">
+    <p class="aviso-datos">
+      Escribe un caso inventado de práctica. No escribas nombres, cédulas, direcciones ni
+      datos de personas reales. Aquí no se suben fotos ni archivos.
+    </p>
+
+    <form class="formulario" id="formulario-caso">
+      <div class="campo">
+        <label for="contaminacion">Tipo de contaminación</label>
+        <p class="ayuda">Sin este dato no se puede saber qué requisitos técnicos aplicar.</p>
+        <select id="contaminacion" name="contaminacion">
+          <option value="">— Selecciona una opción —</option>
+          <option value="ruido">Ruido</option>
+          <option value="basuras">Basuras</option>
+          <option value="vertimientos">Vertimientos</option>
+        </select>
+      </div>
+
+      <div class="campo">
+        <label for="origen">Origen del problema</label>
+        <p class="ayuda">
+          De dónde sale la molestia. Por ejemplo, una fiesta de un vecino es residencia
+          particular.
+        </p>
+        <select id="origen" name="origen">
+          <option value="">— Selecciona una opción —</option>
+          <option value="residencia">Residencia particular (casa o apartamento de un vecino)</option>
+          <option value="local">Local comercial (bar, tienda, taller, restaurante)</option>
+          <option value="obra">Obra pública</option>
+        </select>
+      </div>
+
+      <div class="campo">
+        <label for="pruebas">Formato de las pruebas aportadas hoy</label>
+        <p class="ayuda">
+          Marca lo que el ciudadano trajo hoy, aunque todavía no cumpla los requisitos
+          técnicos. Si no trajo nada, marca «Ninguna».
+        </p>
+        <select id="pruebas" name="pruebas">
+          <option value="">— Selecciona una opción —</option>
+          <option value="ninguna">Ninguna</option>
+          <option value="fotos">Fotos sueltas</option>
+          <option value="videos">Videos</option>
+          <option value="firmas">Recolección de firmas</option>
+        </select>
+      </div>
+    </form>
+
+    <section class="ejemplo" aria-labelledby="titulo-ejemplo">
+      <h2 id="titulo-ejemplo">Caso inventado de práctica</h2>
+      <p class="ejemplo-titulo">El bar de la esquina (ruido excesivo)</p>
+      <blockquote class="relato">
+        «Mire, abrieron un bar de cócteles hace tres meses en la esquina de mi cuadra, que es
+        netamente residencial. Ponen música a todo volumen de jueves a domingo hasta las 3:00
+        de la mañana. No podemos dormir, mis ventanas vibran. Fui a hablar con el dueño y me
+        ignoró, dice que él tiene permiso de funcionamiento.»
+      </blockquote>
+      <p class="ayuda">
+        Doña Rosa y el bar son inventados. Sirven solo para practicar.
+      </p>
+      <button type="button" id="boton-ejemplo" class="boton secundario">Usar este ejemplo</button>
+      <p class="confirmacion" id="confirmacion-ejemplo" role="status" aria-live="polite"></p>
+    </section>
+
+    <p class="siguiente">
+      <button type="button" id="boton-revisar" class="boton">Revisar el caso →</button>
+    </p>
+
+    <p class="volver"><a href="index.html">← Volver a la entrada</a></p>
+  </main>
+
+  <script src="caso.js"></script>
+</body>
+</html>
